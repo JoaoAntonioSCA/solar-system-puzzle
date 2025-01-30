@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Sistem Puzzle</title>
+    <link rel="shortcut icon" href="midias/galaxy-favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Styles/style.css">
+    <style>
+        body {
+            opacity: 0;
+            transition: opacity 15s ease; /* 15 segundos de transição */
+        }
+        .fade-in {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <p class="Psimbols">&#x263F;</p> <!--☿-->
+
+    <img src="midias/mercury.png" alt="mercury photo" class="center">
+
+    <audio autoplay preload="auto" loop>
+        <source src="midias/audios/mercury-soundeffects.ogg" type="audio/ogg">
+        <source src="midias/audios/mercury-soundeffects.mp3" type="audio/mpeg">
+        <source src="midias/audios/mercury-soundeffects.wav" type="audio/wav">
+        Sorry, your browser does not support the audio element.
+    </audio>
+
+    <div class="container">
+        <input type="text" id="textBox" placeholder="Type answer">
+        <button onclick="checkWord()">Go</button>
+    </div>
+
+    <script src="Scripts/script.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            document.body.classList.add('fade-in');
+        });
+    </script>
+</body>
+</html>

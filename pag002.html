@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Sistem Puzzle</title>
+    <link rel="shortcut icon" href="midias/galaxy-favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Styles/style.css">
+    <style>
+        body{
+            transition: opacity 1s ease; /* Aplica a transição à imagem de fundo */            
+            background-image:url('midias/solar-system-image-fixed.png');
+            background-repeat: no-repeat; /* Evita que a imagem se repita */
+            background-position: top; /* Centraliza a imagem */
+            background-color: rgb(0, 0, 0);
+        }
+        .fade-out{
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+  
+    <h1>Solar Sistem Puzzle</h1>
+    <hr>
+    <h2>The web site game where you solve an enigma for each celestial bodies in the solar system.</h2>
+
+    <p>Hope you enjoy it!</p>
+
+    <div id="start-button">
+        <a target="_self" rel="next" href="mercury.html" id="link"><button class="menu-button">Start</button></a>
+    </div>
+
+    <audio id="audio" preload="auto" autoplay loop>
+        <source src="midias/audios/music-tracks/SSP-menu-track.ogg" type="audio/ogg">
+        <source src="midias/audios/music-tracks/SSP-menu-track.mp3" type="audio/mpeg">
+        <source src="midias/audios/music-tracks/SSP-menu-track.wav" type="audio/wav">
+        Sorry, your browser does not support the audio element.
+    </audio>
+
+    <script src="Scripts/script0.js"></script>
+</body>
+</html>

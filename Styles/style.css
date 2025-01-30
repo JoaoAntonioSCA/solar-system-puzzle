@@ -1,0 +1,101 @@
+@charset "UTF-8";
+@font-face {
+    font-family:PublicSans;
+    src: url(../midias/fonts/PublicSans-VariableFont_wght.ttf) format(OpenType);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family:Smoothpet;
+    src: url(../midias/fonts/smoothpet.ttf) format(TrueType);
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+h1 {
+    color: rgb(252, 252, 252);
+    font-family: Smoothpet, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+h2 {
+    color: rgb(252, 252, 252);
+    font-family: PublicSans, Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    text-align: center;
+}
+p {
+    color: rgb(252, 252, 252);
+    font-family: PublicSans, Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    text-align: center;
+}
+hr {
+    color: rgb(252, 252, 252);
+}
+.center {                         /*Images features*/
+    display: block;
+    margin: auto;
+    width: 75%;
+  }
+/*----------------------------------------------------------------*/
+.container {                    /*Answer box's box features*/
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align:initial;
+}
+
+input[type="text"] {            /*Answer box features*/
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    border-radius: 3px;
+}
+#initial-start-button{
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    height: 98vh;           /* Define a altura como 98% da viewport */
+}
+#start-button{
+    display: flex;
+    justify-content: flex-end; /* Mantém os elementos no final horizontalmente (direita da tela) */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    height: 100vh; /* Define a altura do container como 100% da altura da tela */
+    width: 100vw; /* Define a largura do container como 100% da largura da tela */
+    flex-direction: column; /* Mantém os elementos dispostos em coluna */
+    position: absolute; /* Posiciona o container em relação à tela */
+    top: 0;
+    left: 0;
+}
+.menu-button{
+    margin: 50px;
+}
+button {                        /*Button feature*/
+    padding: 10px 25px;
+    background-color: #000000;
+    color: white;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: initial;
+}
+
+button:hover {                  /*Button when being holded features*/
+    background-color: #353535;
+}
+.Psimbols{
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    text-align: left;
+}
+  
