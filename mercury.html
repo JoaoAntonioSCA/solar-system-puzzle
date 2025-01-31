@@ -10,6 +10,16 @@
         body {
             opacity: 0;
             transition: opacity 15s ease; /* 15 segundos de transição */
+            
+        }
+        .background-images{
+            max-width: 1880px;
+            margin: auto;
+            height: 800px;
+            background-image:url('midias/mercury2.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
         }
         .fade-in {
             opacity: 1;
@@ -17,10 +27,6 @@
     </style>
 </head>
 <body>
-
-    <p class="Psimbols">&#x263F;</p> <!--☿-->
-
-    <img src="midias/mercury.png" alt="mercury photo" class="center">
 
     <audio autoplay preload="auto" loop>
         <source src="midias/audios/mercury-soundeffects.ogg" type="audio/ogg">
@@ -34,7 +40,11 @@
         <button onclick="checkWord()">Go</button>
     </div>
 
-    <script src="Scripts/script.js"></script>
+    <div class="background-images"></div>
+
+    <p class="Psimbols">&#x263F;</p> <!--☿-->
+
+    <script src="Scripts/scrit.js"></script>
     <script>
         window.addEventListener('load', function() {
             document.body.classList.add('fade-in');
