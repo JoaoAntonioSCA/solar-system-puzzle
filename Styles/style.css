@@ -35,20 +35,22 @@ p {
     font-weight: 100;
     text-align: center;
 }
+.hidden-text{
+    color: rgb(4, 4, 4);
+}
 hr {
     color: rgb(252, 252, 252);
 }
 .center {                         /*Images features*/
     display: block;
     margin: auto;
-    width: 75%;
   }
 /*----------------------------------------------------------------*/
 .container {                    /*Answer box's box features*/
     background-color: transparent;
     display: inline-block;
     max-width: 310px;
-    margin: 32px 32px 0 calc(100vw - 338px);
+    margin: 10px 10px 10px calc(100vw - 356px);
 }
 
 input[type="text"] {            /*Answer box features*/
@@ -97,4 +99,3 @@ button:hover {                  /*Button when being holded features*/
     font-weight: lighter;
     text-align: center;
 }
-  

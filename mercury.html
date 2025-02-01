@@ -10,16 +10,6 @@
         body {
             opacity: 0;
             transition: opacity 15s ease; /* 15 segundos de transição */
-            
-        }
-        .background-images{
-            max-width: 1880px;
-            margin: auto;
-            height: 800px;
-            background-image:url('midias/mercury2.png');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
         }
         .fade-in {
             opacity: 1;
@@ -40,11 +30,16 @@
         <button onclick="checkWord()">Go</button>
     </div>
 
-    <div class="background-images"></div>
+    <picture>
+        <source media="(max-width: 730px)" srcset="midias/mercury320x290px.png">
+        <source media="(max-height: 920px)" srcset="midias/mercury730x660px.png">
+        <source media="(max-width: 1880px)" srcset="midias/mercury730x800px.png">
+        <img src="midias/mercury1880x800px.png" alt="Mercury" class="center">
+    </picture>
 
     <p class="Psimbols">&#x263F;</p> <!--☿-->
+    <p class="hidden-text">do not hurry, like mercury does</p>
 
-    <script src="Scripts/scrit.js"></script>
     <script>
         window.addEventListener('load', function() {
             document.body.classList.add('fade-in');
