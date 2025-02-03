@@ -48,7 +48,12 @@
             <button onclick="checkWord()">Go</button>
         </div>
 
-        <img src="midias/venus-siteimg1880x460px.png" alt="Venus photo" class="center">
+        <picture>
+            <source media="(max-width: 730px)" srcset="midias/venus320x290px.png">
+            <source media="(max-height: 920px)" srcset="midias/venus730x660px.png">
+            <source media="(max-width: 1880px)" srcset="midias/venus730x800px.png">
+            <img src="midias/venus1880x800px.png" alt="Venus" class="center">
+        </picture>
         
         <div id="buttom">
             <p>Let the goddess Venus shine</p>
