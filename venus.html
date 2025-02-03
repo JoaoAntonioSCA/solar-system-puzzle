@@ -6,23 +6,53 @@
     <title>Solar Sistem Puzzle</title>
     <link rel="shortcut icon" href="midias/galaxy-favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="Styles/style.css">
+    <style>
+        a{
+            margin-left: 50px;
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+        }
+        a:hover{
+            color: rgba(255, 255, 255);
+        }
+        #buttom{
+            position: fixed;
+            bottom: 20px; /* Distância do fundo */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 230px;
+        }
+        #buttom > p{
+            display: none;
+        }
+        #buttom:active p {
+            display: block;
+            transition-duration: 0.2s;
+        }
+        p{
+            font-style: italic;  
+            margin-bottom: 50px;
+        }
+    </style>
 </head>
 <body>
-    
-    <p class="Psimbols">&#x2640;</p> <!--♀-->
+        <audio autoplay loop preload="auto" >
+            <source src="midias/audios/venus-soundeffects.mp3" type="audio/mpeg">
+            <source src="midias/audios/venus-soundeffects.ogg" type="audio/ogg">
+            <source src="midias/audios/venus-soundeffects.wav" type="audio/wav">
+            Sorry, your browser does not support the audio element.
+        </audio>
 
-    <img src="midias/venus-siteimg.png" alt="Venus photo" class="center">
+        <div class="container">
+            <input type="text" id="textBox" placeholder="Type answer">
+            <button onclick="checkWord()">Go</button>
+        </div>
 
-    <audio autoplay loop preload="auto" >
-        <source src="midias/audios/venus-soundeffects.mp3" type="audio/mpeg">
-        <source src="midias/audios/venus-soundeffects.ogg" type="audio/ogg">
-        <source src="midias/audios/venus-soundeffects.wav" type="audio/wav">
-        Sorry, your browser does not support the audio element.
-    </audio>
-
-    <div class="container">
-        <input type="text" id="textBox" placeholder="Type answer">
-        <button onclick="checkWord()">Go</button>
-    </div>
+        <img src="midias/venus-siteimg1880x460px.png" alt="Venus photo" class="center">
+        
+        <div id="buttom">
+            <p>Let the goddess Venus shine</p>
+            <a href="#">Apparent magnitude?</a>
+        </div>
 </body>
 </html>
